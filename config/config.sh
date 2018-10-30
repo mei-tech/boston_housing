@@ -3,7 +3,7 @@
 # install default requirements
 cd /home/tf/config
 if [[ $(wc -l < "default_requirements.txt") -ge 0 ]]; then
-  pip install -r default_requirements.txt
+  pip3 install -r default_requirements.txt
 fi
 
 # ipython notebooks config
@@ -12,7 +12,7 @@ fi
 cd /notebooks
 # install project requirements
 if [[ $(wc -l < "requirements.txt") -ge 0 ]]; then
-  pip install -r requirements.txt
+  pip3 install -r requirements.txt
 fi
 
 /run_jupyter.sh --allow-root
