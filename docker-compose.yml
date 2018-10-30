@@ -1,9 +1,9 @@
 version: "3"
 services:
   tf-udacity:
-    container_name: tf-udacity
+    container_name: tf-udacity-py3-boston_housing
     build: ./tf-image
-    image: tf-udacity
+    image: tf-udacity-py3-boston_housing
     # restart: always
     ports:
       - "8888:8888"
